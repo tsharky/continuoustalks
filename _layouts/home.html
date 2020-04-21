@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+
+{% for post in site.posts %}
+{{ post.author }}
+<div class="message">
+   <div class="title">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.date | date: "%b %-d, %Y"}}</p>
+   </div>
+   <div class="text">
+      <p>{{ post.content }}</p>
+      {{ post.category }}
+   </div>
+</div>
+{% endfor %}
+
+{% for post in site.categories.Fashion %}
+Hallo
+{% endfor %}
+
+{% if post %}
+  {% assign categories = post.categories %}
+{% else %}
+  {% assign categories = page.categories %}
+{% endif %}
+{% for category in categories %}
+Hey<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+{% unless forloop.last %}&nbsp;{% endunless %}
+{% endfor %}

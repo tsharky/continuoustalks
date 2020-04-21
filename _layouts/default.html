@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        Hier steht Ihre Werbung!
+      </div>
+      <div id="navigation">
+        <ul>
+          <li class="button"><a id="currentpage" href="">Home</a></li>
+          <li class="button"><a href="">Beauty</a></li>
+          <li class="button"><a href="">Fashion</a></li>
+          <li class="button"><a href="">Lifestyle</a></li>
+          <li class="button"><a href="">Food</a></li>
+          <li class="button"><a href="">Games</a></li>
+          <li class="button"><a href="">Sonstige</a></li>
+          <li id="blank"></li>
+        </ul>
+      </div>
+      <div id="content">
+        {{ content}}
+      </div>
+      <div id="footer">
+        fuck copyright ®
+      </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+#wrapper {
+  border: solid 1px;
+  margin: auto;
+  width: 60%;
+}
+
+#header {
+  border: solid 1px;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/banner.png);
+}
+
+#navigation {
+  border: solid 1px;
+  height: 50px;
+  width: 100%;
+}
+
+#navigation ul {
+	text-align: justify;
+}
+
+#navigation li.button {
+	display: inline-block;
+	width: 110px;
+	height: 30px;
+}
+
+#navigation a {
+	display: block;
+	width: 100%;
+	height: 100%;
+   background-color: #BFA893;
+	line-height: 30px;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#navigation a:hover {
+	background-color: #F4E6D2;
+}
+
+#navigation a#currentpage {
+	background-color: #54A693;
+}
+
+#content {
+  border: solid 1px;
+  margin: 1%;
+  text-align: justify;
+  background-color: #F8F3EB;
+}
+
+.message {
+	margin-bottom: 100px;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 10px;
+}
+
+.title h1 {
+	font-family: My Snell Roundhand;
+	font-weight: lighter;
+	font-size: 36px;
+	color: #54A693;
+}
+
+.title p {
+	font-size: 10px;
+	color: #8C6E68;
+}
+
+.text {
+	padding-top: 10px;
+	border-top: solid 1px;
+	border-top-color: #8C6E68;
+	text-align: justify;
+	color: #8C6E68;
+}
+
+.text img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+  border: solid 1px;
+  width: 100%;
+  text-align: center;
+}
